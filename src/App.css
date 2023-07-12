@@ -1,0 +1,91 @@
+.weatherbg  {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./weatherApp.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Basic button styling */
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+  background-color: #45a049; /* Change to your desired hover background color */
+}
+
+/* Button focus effect */
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Change to your desired focus effect */
+}
+
+.heading {
+  padding-top: 2rem;
+  color: white;
+  font-size: 40px;
+}
+
+.weatherResultBox {
+  margin: auto;
+  width: 450px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  padding: 2rem;
+}
+
+.weatherIcon {
+  margin-top: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.weatherCity {
+  font-size: 30px;
+  margin-top: 2rem;
+}
+
+.weatherTemp{
+  font-size: 20px;
+}
+.weatherComponents {
+  width: 50%;
+  float: left;
+}
+
+.weatherDetails {
+  width: 50%;
+  float: right;
+}
+
+.weatherNames {
+  float: left;
+}
+
+.weatherValues {
+  float: right;
+}
+hr {
+  border-top: 3px solid #5c5c5c;
+  padding: 0.25rem;
+}
