@@ -2,7 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
 import weatherIcon from "./logoIcon.jpg"
 import {  useEffect, useState } from "react";
-import {AutoComplete} from 'antd'
 import axios from 'axios';
 function App() {
 
@@ -10,6 +9,7 @@ function App() {
 
   const [inputCity, setInputCity] = useState("")
   const [data,setData] = useState()
+
   const getWeatherDetails = (cityName) => {
 
     if(!cityName) return
@@ -40,12 +40,12 @@ function App() {
           <h1 className="heading">weatherApp</h1>
           <div className="d-grid col-3 mt-4 gap-3">
 
-             <AutoComplete
+             <input
              placeholder="Search your city" 
              type="text" 
              className="form-control"
              value={inputCity}
-             onSearch={handleChangeInput}
+             onChange={handleChangeInput}
              />
 
              <button className="btn-primary" type="button" onClick = {handleSearch}>Search</button>
