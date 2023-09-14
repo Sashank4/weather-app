@@ -3,7 +3,7 @@ import './App.css';
 import weatherIcon from "./logoIcon.jpg"
 import {  useEffect, useState } from "react";
 import {AutoComplete} from 'antd'
-import axios from "axios";
+import axios from 'axios';
 function App() {
 
   const apiKey = "144fa213aa56f004b846e62f63114cb4";
